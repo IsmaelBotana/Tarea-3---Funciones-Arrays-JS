@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+
+<body>
+    <script>
+        const nombres = [
+            "ana garcia",
+            "luis perez",
+            "marta lopez",
+            "carlos ruiz"
+        ];
+        // Resultado esperado: ["GARCIA, Ana", "PEREZ, Luis", ...]
+        const formateados = nombres.map(nombre =>{
+            let array = nombre.split(" ")
+            let soporte
+            soporte = array[0] 
+            array[0] = array[1]
+            array[1] = soporte
+            return array.join(", ")
+        });
+        console.log(formateados);
+    </script>
+</body>
+
+</html>

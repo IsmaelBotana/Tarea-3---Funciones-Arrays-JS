@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <p id="listaFiltrada"></p>
+    <script>
+        const listaFiltrada = document.getElementById("listaFiltrada")
+        const tags = ["js", "css", "js", "html", "css", "js", "react"];
+        const unicos = tags.filter(sinRepetidos);
+        listaFiltrada.innerHTML = unicos
+        function sinRepetidos(tag, indice){
+            //return tags[i] === tags[tags.indexOf(tag)]
+            //return tags.indexOf(tags.indexOf(tag) + 1, tag) !== -1
+            //return tags.indexOf(e => e !== tag)
+            //return tags.slice(tags.indexOf(tag), 7).indexOf(tag) !== -1
+            
+            //return -1 == tags.indexOf(tags.indexOf(tag) + 1, tag)
+            return tags.indexOf(tag) === indice
+            
+        }
+    </script>
+</body>
+</html>
